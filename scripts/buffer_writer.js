@@ -64,7 +64,7 @@ function run() {
 				numberOfEditors = editor.split("&").length;
 				editor = editor.replace (/&.*&.*/, "et al."); // insert et al
 			}
-			else if (/\stitle =/i.test(property)) {
+			else if (/title =/i.test(property)) {
 				title = extract(property);
 				if (title.length > alfredBarLength) title = title.substring(0, alfredBarLength).trim() + "...";
 			}
