@@ -1,5 +1,13 @@
 # Pandoc-Suite and BibTeX-Zotero-Citation-Picker for Academic Writing in Markdown
 
+---
+
+⚠️ Since I changed my workflow substantially, this workflow will not be actively maintained anymore. I'll developing [the Alfred-based Citation Picker here](https://github.com/chrisgrieser/alfred-bibtex-citation-picker).
+
+The latest release still works and will most likely continue to work for the foreseeable future.
+
+---
+
 ![](https://img.shields.io/github/downloads/chrisgrieser/pandoc_alfred/total?label=Total%20Downloads&style=plastic)  ![](https://img.shields.io/github/v/release/chrisgrieser/pandoc_alfred?label=Latest%20Release&style=plastic)
 
 ## What it does
