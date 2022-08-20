@@ -149,13 +149,6 @@ cat << EOB
 			"subtitle": "Try this when the Alfred Citation Picker misbehaves"
 		},
 		{
-			"title": "📧 Debugging: Report an Issue to the Developer",
-			"match":"debugging email mail issue report bug help",
-			"arg": "email",
-			"uid": "22",
-			"subtitle": "will open default mail client"
-		},
-		{
 			"title": "🚀 Open Output File after Conversion",
 			"match":"open output after conversion Finder reveal",
 			"arg": "open_after",

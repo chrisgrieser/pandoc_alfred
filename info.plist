@@ -571,18 +571,6 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>E07255AA-BD02-45CF-8FE3-817111A25346</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>63A4B444-681D-4D2A-A7FA-EB275F5925F3</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>13464BBD-A691-40F0-A7E4-6ED4AEC2B37B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -1833,8 +1821,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E07255AA-BD02-45CF-8FE3-817111A25346</key>
-		<array/>
 		<key>E089F2B7-2FE8-4E77-B050-9AE8287186D8</key>
 		<array>
 			<dict>
@@ -2130,6 +2116,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>force-buffer-reload</string>
 			</dict>
@@ -2381,6 +2369,8 @@ echo -n $dummyBib | pandoc --citeproc --read=markdown --write=plain --csl $csl -
 				</array>
 				<key>elselabel</key>
 				<string>up-to-date</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -2411,6 +2401,8 @@ echo -n $dummyBib | pandoc --citeproc --read=markdown --write=plain --csl $csl -
 				</array>
 				<key>elselabel</key>
 				<string>Zotero (classic)</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -2711,6 +2703,8 @@ JSON.stringify({ 'items': entry_array });
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>citation-picker-loop</string>
 			</dict>
@@ -2782,12 +2776,14 @@ JSON.stringify({ 'items': entry_array });
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>x-bdsk://{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2801,12 +2797,14 @@ JSON.stringify({ 'items': entry_array });
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string></string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2959,6 +2957,8 @@ end if</string>
 				</array>
 				<key>elselabel</key>
 				<string>empty</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -3007,6 +3007,8 @@ end if</string>
 				</array>
 				<key>elselabel</key>
 				<string>not running</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -3168,6 +3170,8 @@ This usually only happens when you have created a new document and have not save
 				</array>
 				<key>elselabel</key>
 				<string>other file type</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -3307,6 +3311,8 @@ This usually only happens when you have created a new document and have not save
 				</array>
 				<key>elselabel</key>
 				<string>pdf_engine set</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -3378,6 +3384,8 @@ This usually only happens when you have created a new document and have not save
 				</array>
 				<key>elselabel</key>
 				<string>not pdf</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -3579,6 +3587,8 @@ You can do that by triggering Alfred, typing "pconf", and selecting "BibTeX Libr
 				</array>
 				<key>elselabel</key>
 				<string></string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -3688,6 +3698,8 @@ You can do that by triggering Alfred, typing "pconf", and selecting "BibTeX Libr
 				</array>
 				<key>elselabel</key>
 				<string>bib-file set</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -4129,6 +4141,8 @@ echo -n "$csl_name"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>set-new-setting</string>
 			</dict>
@@ -4186,6 +4200,10 @@ echo -n "$csl_name"</string>
 			<dict>
 				<key>delimiter</key>
 				<string>;;</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
 				<key>trimarguments</key>
 				<true/>
 				<key>variableprefix</key>
@@ -4269,6 +4287,8 @@ echo -n "$csl_name"</string>
 				</array>
 				<key>elselabel</key>
 				<string>local</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -4374,6 +4394,8 @@ echo -n "$csl_name"</string>
 				<true/>
 				<key>items</key>
 				<string>[{"title":"Word Document","arg":"docx","subtitle":".docx"},{"title":"PDF Document","arg":"pdf","subtitle":".pdf"},{"title":"HTLM File (Standalone)","arg":"html","subtitle":".html"},{"title":"Powerpoint Presentation","arg":"pptx","subtitle":".pptx"},{"title":"Open Office Writer Document","arg":"odt","subtitle":".odt"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -4393,6 +4415,8 @@ echo -n "$csl_name"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>open-url</string>
 			</dict>
@@ -4576,6 +4600,8 @@ echo -n "$csl_name"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>pconf-loop</string>
 			</dict>
@@ -4797,6 +4823,8 @@ echo -n "$csl_name"</string>
 				<true/>
 				<key>items</key>
 				<string>[{"title":"📕 Zotero Citation Picker (classic)","arg":"Zotero","subtitle":"uses native Zotero GUI (Zotero must be installed)"},{"title":"🎩 Alfred Citation Picker (alternative)","arg":"Alfred","subtitle":"uses Alfred as GUI, works directly on BibTeX Library"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -5199,23 +5227,11 @@ echo -n "$csl_name"</string>
 						<key>uid</key>
 						<string>130D0624-E8D3-4591-9BE7-F3C76D59AFE8</string>
 					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>email</string>
-						<key>outputlabel</key>
-						<string>email</string>
-						<key>uid</key>
-						<string>63A4B444-681D-4D2A-A7FA-EB275F5925F3</string>
-					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>exit</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -5235,6 +5251,8 @@ echo -n "$csl_name"</string>
 				<true/>
 				<key>items</key>
 				<string>[{"title":"📅 Normal Date Format","arg":"normal","subtitle":"dd-mm-yyyy"},{"title":"🗓 American Date Format","arg":"american","subtitle":"mm-dd-yyyy"},{"title":"❌ Do not append any Date","arg":"none","subtitle":""}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -5282,6 +5300,8 @@ echo -n "$csl_name"</string>
 				<true/>
 				<key>items</key>
 				<string>[{"title":"🔗 Create Automatic Hyperlinks","arg":"true","subtitle":"Citations to Bibliography &amp; Bibliography to URLs"},{"title":"❌ No Automatic Links","arg":"false","subtitle":""}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -5822,6 +5842,8 @@ echo -n "$csl_name"</string>
 				<true/>
 				<key>items</key>
 				<string>[{"title":"✅ Open Output File after Conversion","arg":"true","subtitle":"with default application"},{"title":"❌ Do Open Output File after Conversion","arg":"false","subtitle":"only reveal it in Finder"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -5869,6 +5891,8 @@ echo -n "$csl_name"</string>
 				<true/>
 				<key>items</key>
 				<string>[{"title":"Slide-Level 0️⃣","arg":"0","subtitle":"'---' will be used as slide seperator"},{"title":"Slide-Level 1️⃣","arg":"1","subtitle":"H1 will be used as slide titles"},{"title":"Slide-Level 2️⃣","arg":"2","subtitle":"H2 will be used as slide titles"},{"title":"Slide-Level 3️⃣","arg":"3","subtitle":"H3 will be used as slide titles"},{"title":"Slide-Level 4️⃣","arg":"4","subtitle":"H4 will be used as slide titles"},{"title":"Consult Pandoc Manual on Slide Levels &amp; Slide Structure","arg":"url","subtitle":"in the Pandoc documentation"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -5974,6 +5998,8 @@ echo -n "$csl_name"</string>
 				</array>
 				<key>elselabel</key>
 				<string>url</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -6013,6 +6039,8 @@ echo -n "$csl_name"</string>
 				<true/>
 				<key>items</key>
 				<string>[{"title":"ℹ️ Information on PDF Engines","arg":"url","subtitle":"in the documentation"},{"title":"pdflatex (recommended)","arg":"pdflatex","subtitle":"Latex"},{"title":"pdflatex (M1 Macs)","arg":"pdflatex-arm","subtitle":"Workaround for ARM Macs"},{"title":"wkhtmltopdf (recommended)","arg":"wkhtmltopdf","subtitle":"HTML"},{"title":"pdfroff (recommended)","arg":"pdfroff","subtitle":"groff"},{"title":"prince","arg":"prince","subtitle":"HTML"},{"title":"tectonic","arg":"tectonic","subtitle":"self-contained Latex"},{"title":"weasyprint","arg":"weasyprint","subtitle":"HTML"},{"title":"context","arg":"context","subtitle":"Tex"},{"title":"lualatex","arg":"lualatex","subtitle":"Latex"},{"title":"xelatex","arg":"xelatex","subtitle":"Latex"},{"title":"latexmk","arg":"latexmk","subtitle":"Latex"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -6132,29 +6160,6 @@ man -t pandoc | open -f -a Preview</string>
 			<integer>2</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>scripts/mailto-build.js</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E07255AA-BD02-45CF-8FE3-817111A25346</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>
@@ -6178,9 +6183,9 @@ You need to force reload the citaiton picer buffer (pconf ➞ reload) once after
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3780</integer>
+			<real>3780</real>
 		</dict>
 		<key>06928646-A3C8-4D15-A526-2D6E9A4233A6</key>
 		<dict>
@@ -6189,63 +6194,63 @@ You need to force reload the citaiton picer buffer (pconf ➞ reload) once after
 			<key>note</key>
 			<string>check whether buffer is outdated</string>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>335</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>0701EFEB-4FDB-4B6F-9F5F-ADDE67DDCC2F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3335</integer>
+			<real>3335</real>
 		</dict>
 		<key>07E85B51-4AC8-41B8-898E-74356FC21A6C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>4225</integer>
+			<real>4225</real>
 		</dict>
 		<key>0A379478-9939-4905-9781-F1145FC20901</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4385</integer>
+			<real>4385</real>
 		</dict>
 		<key>10000D18-BDC8-4A08-B089-D7164D917E8A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>2265</integer>
+			<real>2265</real>
 		</dict>
 		<key>13464BBD-A691-40F0-A7E4-6ED4AEC2B37B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>615</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4995</integer>
+			<real>4830</real>
 		</dict>
 		<key>13851D58-1F95-41E7-A686-9E1B91BD2086</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1765</integer>
+			<real>1765</real>
 			<key>ypos</key>
-			<integer>2075</integer>
+			<real>2075</real>
 		</dict>
 		<key>1586C092-4E94-4D4C-B43C-70C1C7103F66</key>
 		<dict>
@@ -6254,45 +6259,45 @@ You need to force reload the citaiton picer buffer (pconf ➞ reload) once after
 			<key>note</key>
 			<string>convert to .pdf</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>1105</integer>
+			<real>1105</real>
 		</dict>
 		<key>165FFAAF-92C5-4F2C-BD2A-EFD28B7EFD48</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>580</integer>
+			<real>580</real>
 			<key>ypos</key>
-			<integer>1125</integer>
+			<real>1125</real>
 		</dict>
 		<key>1B92DFF5-B773-4E2B-A9A3-0F97EBF33900</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>575</integer>
+			<real>575</real>
 			<key>ypos</key>
-			<integer>1515</integer>
+			<real>1515</real>
 		</dict>
 		<key>1BD05DD1-96B4-4180-93BD-1BD3EC5A304C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3980</integer>
+			<real>3980</real>
 		</dict>
 		<key>1C0964D1-AA81-478A-B406-28E96DDD9E82</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1330</integer>
+			<real>1330</real>
 			<key>ypos</key>
-			<integer>360</integer>
+			<real>360</real>
 		</dict>
 		<key>1E75D41D-467E-425D-B8F5-C1C888C575F0</key>
 		<dict>
@@ -6303,9 +6308,9 @@ You need to force reload the citaiton picer buffer (pconf ➞ reload) once after
 
 Trigger Pandoc Conversion</string>
 			<key>xpos</key>
-			<integer>10</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>200</integer>
+			<real>200</real>
 		</dict>
 		<key>1EEF412E-0663-4CB2-9A38-F5E1498CD868</key>
 		<dict>
@@ -6314,54 +6319,54 @@ Trigger Pandoc Conversion</string>
 			<key>note</key>
 			<string>logs STDERR</string>
 			<key>xpos</key>
-			<integer>1315</integer>
+			<real>1315</real>
 			<key>ypos</key>
-			<integer>1450</integer>
+			<real>1450</real>
 		</dict>
 		<key>203213EF-7CCC-4A0A-A034-41804B7CAF0D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1200</integer>
+			<real>1200</real>
 			<key>ypos</key>
-			<integer>1590</integer>
+			<real>1590</real>
 		</dict>
 		<key>21CE81FE-25A9-458F-91ED-EDECC004F8D0</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1075</integer>
+			<real>1075</real>
 			<key>ypos</key>
-			<integer>1220</integer>
+			<real>1220</real>
 		</dict>
 		<key>245395CA-A94A-4764-9700-EE3C8C833DEA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1190</integer>
+			<real>1190</real>
 			<key>ypos</key>
-			<integer>2240</integer>
+			<real>2240</real>
 		</dict>
 		<key>26F37632-6D01-4F0C-AEC5-8B418A2A87E9</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2830</integer>
+			<real>2830</real>
 		</dict>
 		<key>27DEB378-75B0-4A5B-B864-1791E42F9540</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>2625</integer>
+			<real>2625</real>
 		</dict>
 		<key>2A53A3E8-F0F6-4331-95FE-472A3A007E59</key>
 		<dict>
@@ -6370,72 +6375,72 @@ Trigger Pandoc Conversion</string>
 			<key>note</key>
 			<string>write buffer</string>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>2B75EA4F-7614-44CF-AD53-82665925E344</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>395</integer>
+			<real>395</real>
 			<key>ypos</key>
-			<integer>580</integer>
+			<real>580</real>
 		</dict>
 		<key>2C9C9202-FD29-496C-BBE2-2858BF4A9641</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>160</integer>
+			<real>160</real>
 			<key>ypos</key>
-			<integer>2915</integer>
+			<real>2915</real>
 		</dict>
 		<key>2D59F287-3F5D-4A64-9151-E43716142751</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>1210</integer>
+			<real>1210</real>
 			<key>ypos</key>
-			<integer>600</integer>
+			<real>600</real>
 		</dict>
 		<key>2EDC0763-B89B-4505-8708-46246A5F6AB5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>900</integer>
+			<real>900</real>
 			<key>ypos</key>
-			<integer>2070</integer>
+			<real>2070</real>
 		</dict>
 		<key>2F0E643A-EE6B-4395-A1D6-ADD838B38167</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>425</integer>
+			<real>425</real>
 			<key>ypos</key>
-			<integer>1200</integer>
+			<real>1200</real>
 		</dict>
 		<key>30006A6B-EAF9-4531-8694-5E878A0FB80E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>980</integer>
+			<real>980</real>
 			<key>ypos</key>
-			<integer>460</integer>
+			<real>460</real>
 		</dict>
 		<key>367167E6-8193-46E4-A342-A1B8B9BBD18D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2945</integer>
+			<real>2945</real>
 		</dict>
 		<key>38D8D3B7-5FBE-4AD1-AD38-FB76FFEE2519</key>
 		<dict>
@@ -6444,27 +6449,27 @@ Trigger Pandoc Conversion</string>
 			<key>note</key>
 			<string>remove \n</string>
 			<key>xpos</key>
-			<integer>1060</integer>
+			<real>1060</real>
 			<key>ypos</key>
-			<integer>1480</integer>
+			<real>1480</real>
 		</dict>
 		<key>3CB148CF-6172-497D-8C2B-2032EE3359C1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3065</integer>
+			<real>3065</real>
 		</dict>
 		<key>3DD1D430-5718-48E7-8B15-7FE6A647861D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3185</integer>
+			<real>3185</real>
 		</dict>
 		<key>3E233EB1-E0B2-48CC-9E6F-A5CAFDFD26AD</key>
 		<dict>
@@ -6476,27 +6481,27 @@ Double-click to define
 
 Citation Picker</string>
 			<key>xpos</key>
-			<integer>10</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>15</integer>
+			<real>15</real>
 		</dict>
 		<key>4145FF78-34D2-4CA4-8C74-FE3F463996CC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>670</integer>
+			<real>670</real>
 			<key>ypos</key>
-			<integer>1620</integer>
+			<real>1620</real>
 		</dict>
 		<key>41C30D83-3D29-41B3-9652-C036001F040A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3865</integer>
+			<real>3865</real>
 		</dict>
 		<key>42BDA197-AE7D-45F0-8929-3B154F42219F</key>
 		<dict>
@@ -6505,9 +6510,9 @@ Citation Picker</string>
 			<key>note</key>
 			<string>configures error-log-path</string>
 			<key>xpos</key>
-			<integer>1200</integer>
+			<real>1200</real>
 			<key>ypos</key>
-			<integer>1480</integer>
+			<real>1480</real>
 		</dict>
 		<key>43823B5D-319F-4840-ADDF-B8FDA51FA3A9</key>
 		<dict>
@@ -6516,45 +6521,45 @@ Citation Picker</string>
 			<key>note</key>
 			<string>only file name</string>
 			<key>xpos</key>
-			<integer>940</integer>
+			<real>940</real>
 			<key>ypos</key>
-			<integer>2185</integer>
+			<real>2185</real>
 		</dict>
 		<key>4771A40C-E741-46C5-93EF-82CEB4BD23D8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>510</integer>
+			<real>510</real>
 			<key>ypos</key>
-			<integer>300</integer>
+			<real>300</real>
 		</dict>
 		<key>47E8C31A-BE8B-419A-8ACF-4C3AAB366BB6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>980</integer>
+			<real>980</real>
 		</dict>
 		<key>4830DD28-CB73-414C-97BE-B1BAA437212F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4255</integer>
+			<real>4255</real>
 		</dict>
 		<key>48CFAE2D-926B-4B05-A586-48A7A9D395CE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>155</integer>
+			<real>155</real>
 			<key>ypos</key>
-			<integer>1135</integer>
+			<real>1135</real>
 		</dict>
 		<key>4CD979CC-3ADB-4C54-92FA-F2A9B569E75C</key>
 		<dict>
@@ -6563,9 +6568,9 @@ Citation Picker</string>
 			<key>note</key>
 			<string>remove \n</string>
 			<key>xpos</key>
-			<integer>1145</integer>
+			<real>1145</real>
 			<key>ypos</key>
-			<integer>610</integer>
+			<real>610</real>
 		</dict>
 		<key>501917DB-D6D5-4C2B-87AE-D413E2FA0E2A</key>
 		<dict>
@@ -6574,27 +6579,27 @@ Citation Picker</string>
 			<key>note</key>
 			<string>run pandoc</string>
 			<key>xpos</key>
-			<integer>1045</integer>
+			<real>1045</real>
 			<key>ypos</key>
-			<integer>1590</integer>
+			<real>1590</real>
 		</dict>
 		<key>5119EDE6-2845-436B-8B2A-4354D1FF28FF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1190</integer>
+			<real>1190</real>
 			<key>ypos</key>
-			<integer>2075</integer>
+			<real>2075</real>
 		</dict>
 		<key>527A7408-04E2-4890-A68D-C49D05B7CD4F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3895</integer>
+			<real>3895</real>
 		</dict>
 		<key>5335BA38-FC76-4B47-8D08-462A1AC06CC4</key>
 		<dict>
@@ -6603,18 +6608,18 @@ Citation Picker</string>
 			<key>note</key>
 			<string>display Classic Citation Picker</string>
 			<key>xpos</key>
-			<integer>840</integer>
+			<real>840</real>
 			<key>ypos</key>
-			<integer>580</integer>
+			<real>580</real>
 		</dict>
 		<key>534793CB-6918-434B-9923-C0A40DBD8B30</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>2505</integer>
+			<real>2505</real>
 		</dict>
 		<key>535927EB-2ED1-4C7C-B7B2-3AE4B9C11B88</key>
 		<dict>
@@ -6623,36 +6628,36 @@ Citation Picker</string>
 			<key>note</key>
 			<string>switch back</string>
 			<key>xpos</key>
-			<integer>980</integer>
+			<real>980</real>
 			<key>ypos</key>
-			<integer>580</integer>
+			<real>580</real>
 		</dict>
 		<key>5B9676C6-1ED4-4548-835F-8E5B18BB5392</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>920</integer>
+			<real>920</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>170</real>
 		</dict>
 		<key>5CCDAB00-DD7F-42E9-B0A7-045744A96453</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1030</integer>
+			<real>1030</real>
 			<key>ypos</key>
-			<integer>2435</integer>
+			<real>2435</real>
 		</dict>
 		<key>5D5A206C-3336-4CC3-9B29-712284C032BE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>470</integer>
+			<real>470</real>
 			<key>ypos</key>
-			<integer>175</integer>
+			<real>175</real>
 		</dict>
 		<key>5E03C541-76F4-456C-AE68-1F63590CEE3B</key>
 		<dict>
@@ -6661,27 +6666,27 @@ Citation Picker</string>
 			<key>note</key>
 			<string>convert to .html</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>1640</integer>
+			<real>1640</real>
 		</dict>
 		<key>5F683C78-5D0B-4A39-B3FF-37ABA8DA0D73</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1445</integer>
+			<real>1445</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>600AE4E3-5A4A-47EE-8FDB-855963B4D363</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3530</integer>
+			<real>3530</real>
 		</dict>
 		<key>65CA24BA-2DA6-4DC0-A2BE-3E4E4D5FDD72</key>
 		<dict>
@@ -6690,18 +6695,18 @@ Citation Picker</string>
 			<key>note</key>
 			<string>OneUpdater (automatic update function)</string>
 			<key>xpos</key>
-			<integer>1890</integer>
+			<real>1890</real>
 			<key>ypos</key>
-			<integer>1655</integer>
+			<real>1655</real>
 		</dict>
 		<key>6627A981-4C34-471F-A108-868F4C8F6C77</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>155</integer>
+			<real>155</real>
 			<key>ypos</key>
-			<integer>1410</integer>
+			<real>1410</real>
 		</dict>
 		<key>6ACECC5E-0168-4F34-87C7-A1C6EFF8FCBC</key>
 		<dict>
@@ -6710,9 +6715,9 @@ Citation Picker</string>
 			<key>note</key>
 			<string>citekey w/o @</string>
 			<key>xpos</key>
-			<integer>725</integer>
+			<real>725</real>
 			<key>ypos</key>
-			<integer>490</integer>
+			<real>490</real>
 		</dict>
 		<key>6B04082C-2281-4A10-950C-0B9A324EE9D6</key>
 		<dict>
@@ -6721,27 +6726,27 @@ Citation Picker</string>
 			<key>note</key>
 			<string>pandoc command construction</string>
 			<key>xpos</key>
-			<integer>745</integer>
+			<real>745</real>
 			<key>ypos</key>
-			<integer>1590</integer>
+			<real>1590</real>
 		</dict>
 		<key>6C110AC7-B26B-4E66-B9CA-2D1B37737955</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>860</integer>
+			<real>860</real>
 			<key>ypos</key>
-			<integer>4245</integer>
+			<real>4245</real>
 		</dict>
 		<key>6F19CED8-5C74-4F75-9683-F25D9EAE8841</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4130</integer>
+			<real>4130</real>
 		</dict>
 		<key>7085C0CF-F857-4806-B96D-1FADD51E37EE</key>
 		<dict>
@@ -6750,36 +6755,36 @@ Citation Picker</string>
 			<key>note</key>
 			<string>get current file</string>
 			<key>xpos</key>
-			<integer>485</integer>
+			<real>485</real>
 			<key>ypos</key>
-			<integer>950</integer>
+			<real>950</real>
 		</dict>
 		<key>70FBFBD1-E904-4573-8AB5-87352510BD5E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>825</integer>
+			<real>825</real>
 			<key>ypos</key>
-			<integer>2125</integer>
+			<real>2125</real>
 		</dict>
 		<key>72C61AC9-74D5-4159-B80E-3C4CE8ECFAE4</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>990</integer>
+			<real>990</real>
 			<key>ypos</key>
-			<integer>3380</integer>
+			<real>3380</real>
 		</dict>
 		<key>7499CBB3-C313-433B-8D06-52F9859C9DA5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3420</integer>
+			<real>3420</real>
 		</dict>
 		<key>74F55929-395A-4A89-BCD9-E2BB9E297A1E</key>
 		<dict>
@@ -6788,9 +6793,9 @@ Citation Picker</string>
 			<key>note</key>
 			<string>Paste</string>
 			<key>xpos</key>
-			<integer>980</integer>
+			<real>980</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>753C7C90-E112-4443-AF75-6173EA0E8B4D</key>
 		<dict>
@@ -6799,18 +6804,18 @@ Citation Picker</string>
 			<key>note</key>
 			<string>Configuration of this workflow</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>2190</integer>
+			<real>2190</real>
 		</dict>
 		<key>7B2B3CB9-CBCA-4BFF-A5BD-E04261F66A2F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3560</integer>
+			<real>3560</real>
 		</dict>
 		<key>7BAC0AE1-EB76-46E6-9622-397A10FAC5A7</key>
 		<dict>
@@ -6819,126 +6824,126 @@ Citation Picker</string>
 			<key>note</key>
 			<string>convert to .pptx</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>1510</integer>
+			<real>1510</real>
 		</dict>
 		<key>845BF013-84DB-424E-8D00-B76EF3561521</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>2975</integer>
+			<real>2975</real>
 		</dict>
 		<key>8B058D94-4984-47A7-A097-709430105D5C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1005</integer>
+			<real>1005</real>
 			<key>ypos</key>
-			<integer>4470</integer>
+			<real>4470</real>
 		</dict>
 		<key>8B51C1A0-EAD2-457B-A532-6CC16C7F015E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1030</integer>
+			<real>1030</real>
 			<key>ypos</key>
-			<integer>330</integer>
+			<real>330</real>
 		</dict>
 		<key>8BDFC290-8E56-42A6-91F5-91266806DB1C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>540</integer>
+			<real>540</real>
 			<key>ypos</key>
-			<integer>615</integer>
+			<real>615</real>
 		</dict>
 		<key>9243B177-F039-48CF-A7D9-8D4F3C2664B1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4570</integer>
+			<real>4570</real>
 		</dict>
 		<key>92FD4A05-28D1-4C72-B87F-FE9BF5455B6A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1075</integer>
+			<real>1075</real>
 			<key>ypos</key>
-			<integer>850</integer>
+			<real>850</real>
 		</dict>
 		<key>95165C2F-06F5-4844-AAD4-B78CB4F05930</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2715</integer>
+			<real>2715</real>
 		</dict>
 		<key>96FCE9BC-5201-4357-9B63-588F73AEF5F3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>850</integer>
+			<real>850</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>971DA3B6-3838-4012-ADCD-D864EB9844BD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>710</integer>
+			<real>710</real>
 			<key>ypos</key>
-			<integer>970</integer>
+			<real>970</real>
 		</dict>
 		<key>97776C17-E690-4E00-A470-C1FE4D952723</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2475</integer>
+			<real>2475</real>
 		</dict>
 		<key>986EF1F7-54A1-4C67-A490-4DFCC60FA328</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1410</integer>
+			<real>1410</real>
 			<key>ypos</key>
-			<integer>285</integer>
+			<real>285</real>
 		</dict>
 		<key>99879D56-2467-4AC3-AEA0-F8437EA6766D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1480</integer>
+			<real>1480</real>
 			<key>ypos</key>
-			<integer>2105</integer>
+			<real>2105</real>
 		</dict>
 		<key>9C4D210E-D3C9-4A87-8110-71B51B36DCF8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>155</integer>
+			<real>155</real>
 			<key>ypos</key>
-			<integer>1670</integer>
+			<real>1670</real>
 		</dict>
 		<key>9E303148-5BB4-4D8A-AF82-05EE222BD6F9</key>
 		<dict>
@@ -6947,18 +6952,18 @@ Citation Picker</string>
 			<key>note</key>
 			<string>also has to match "alternative" due to prior Citation Picker naming</string>
 			<key>xpos</key>
-			<integer>175</integer>
+			<real>175</real>
 			<key>ypos</key>
-			<integer>175</integer>
+			<real>175</real>
 		</dict>
 		<key>9F29D610-B925-4C90-AE78-901C4B527146</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3450</integer>
+			<real>3450</real>
 		</dict>
 		<key>A3AAE7A8-ADBD-4AF6-90F9-FEB634A8BEED</key>
 		<dict>
@@ -6967,18 +6972,18 @@ Citation Picker</string>
 			<key>note</key>
 			<string>install/search csl</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2105</integer>
+			<real>2105</real>
 		</dict>
 		<key>A6C04D3D-22D1-4F6E-A0B0-BCD1BEAF8745</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>185</integer>
+			<real>185</real>
 			<key>ypos</key>
-			<integer>2450</integer>
+			<real>2450</real>
 		</dict>
 		<key>A824D01B-F6C7-4D3E-8687-1B43D309258F</key>
 		<dict>
@@ -6987,9 +6992,9 @@ Citation Picker</string>
 			<key>note</key>
 			<string>Error Sound</string>
 			<key>xpos</key>
-			<integer>1330</integer>
+			<real>1330</real>
 			<key>ypos</key>
-			<integer>1090</integer>
+			<real>1090</real>
 		</dict>
 		<key>AA87F73F-B3DC-452A-AA8D-B45E79D13BDA</key>
 		<dict>
@@ -6998,63 +7003,63 @@ Citation Picker</string>
 			<key>note</key>
 			<string>Sucess Sound</string>
 			<key>xpos</key>
-			<integer>1665</integer>
+			<real>1665</real>
 			<key>ypos</key>
-			<integer>1655</integer>
+			<real>1655</real>
 		</dict>
 		<key>ADD6F3B5-B9CF-4BA6-9731-F6FFFEE34EFC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3670</integer>
+			<real>3670</real>
 		</dict>
 		<key>AF051F12-7BF5-4D7A-B0AA-9FAAF9EDB3CA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3215</integer>
+			<real>3215</real>
 		</dict>
 		<key>AF1507DD-81ED-4829-B6C2-C915E0FDD50D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>4355</integer>
+			<real>4355</real>
 		</dict>
 		<key>B4CEE8D7-BBF2-44A4-9654-D2C7A3AF904B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2235</integer>
+			<real>2235</real>
 		</dict>
 		<key>B58453B4-0AA6-471F-92A6-091C8B55CA3F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1340</integer>
+			<real>1340</real>
 			<key>ypos</key>
-			<integer>2075</integer>
+			<real>2075</real>
 		</dict>
 		<key>B84BD2AF-06AD-44C8-8062-6AE0604C9916</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3640</integer>
+			<real>3640</real>
 		</dict>
 		<key>B8AEF220-7CBC-4D07-BA5F-D28094B3D4B4</key>
 		<dict>
@@ -7063,36 +7068,36 @@ Citation Picker</string>
 			<key>note</key>
 			<string>display Alfred Citation Picker</string>
 			<key>xpos</key>
-			<integer>740</integer>
+			<real>740</real>
 			<key>ypos</key>
-			<integer>255</integer>
+			<real>255</real>
 		</dict>
 		<key>B914FAA4-CE6D-4FE6-8BF7-748E1F4EB1F9</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>895</integer>
+			<real>895</real>
 			<key>ypos</key>
-			<integer>1590</integer>
+			<real>1590</real>
 		</dict>
 		<key>B928B68D-85BC-410D-9523-0ACEB84AEAEF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>295</integer>
+			<real>295</real>
 		</dict>
 		<key>BAFFB6EC-4EEC-479B-A7BD-E4560A05B039</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>BB3A40E5-9C0F-411F-A274-483D82413DFC</key>
 		<dict>
@@ -7101,36 +7106,36 @@ Citation Picker</string>
 			<key>note</key>
 			<string>remove variable</string>
 			<key>xpos</key>
-			<integer>1485</integer>
+			<real>1485</real>
 			<key>ypos</key>
-			<integer>1540</integer>
+			<real>1540</real>
 		</dict>
 		<key>BCF854A0-9393-4A26-9BE7-B1DD004B8847</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1075</integer>
+			<real>1075</real>
 			<key>ypos</key>
-			<integer>1095</integer>
+			<real>1095</real>
 		</dict>
 		<key>BD700704-F718-412C-B02A-65B822A7CF67</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2595</integer>
+			<real>2595</real>
 		</dict>
 		<key>BE676612-EAE6-4389-85E0-FEAD2E60BE4C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1260</integer>
+			<real>1260</real>
 			<key>ypos</key>
-			<integer>1480</integer>
+			<real>1480</real>
 		</dict>
 		<key>C5164F81-AFF9-41E3-B457-ACB055240C18</key>
 		<dict>
@@ -7139,9 +7144,9 @@ Citation Picker</string>
 			<key>note</key>
 			<string>convert to .odt</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>1245</integer>
+			<real>1245</real>
 		</dict>
 		<key>C5F3870E-9179-475E-BCA9-D35E172DEE3D</key>
 		<dict>
@@ -7150,36 +7155,36 @@ Citation Picker</string>
 			<key>note</key>
 			<string>convert to .docx</string>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>1380</integer>
+			<real>1380</real>
 		</dict>
 		<key>C6163D07-A2C0-4E02-8D6B-F42F6101E0F8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>2380</integer>
+			<real>2380</real>
 		</dict>
 		<key>C64ACAF0-66C8-48A8-A3C4-B55C7E282697</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1360</integer>
+			<real>1360</real>
 			<key>ypos</key>
-			<integer>175</integer>
+			<real>175</real>
 		</dict>
 		<key>CB1CCA03-D334-4827-8E5F-3BC3565E4C82</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>3095</integer>
+			<real>3095</real>
 		</dict>
 		<key>CB4D33E2-A031-4542-A640-3B73D66EE39E</key>
 		<dict>
@@ -7188,54 +7193,54 @@ Citation Picker</string>
 			<key>note</key>
 			<string>Paste</string>
 			<key>xpos</key>
-			<integer>1335</integer>
+			<real>1335</real>
 			<key>ypos</key>
-			<integer>570</integer>
+			<real>570</real>
 		</dict>
 		<key>CD10FB60-F2A7-4035-91C6-BED56464E0F5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>410</integer>
+			<real>410</real>
 			<key>ypos</key>
-			<integer>980</integer>
+			<real>980</real>
 		</dict>
 		<key>CE27E3EF-A408-4091-8012-14B020868C38</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1120</integer>
+			<real>1120</real>
 			<key>ypos</key>
-			<integer>1470</integer>
+			<real>1470</real>
 		</dict>
 		<key>D14B1989-0F1C-4662-9111-E55C6F447BDE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1340</integer>
+			<real>1340</real>
 			<key>ypos</key>
-			<integer>2240</integer>
+			<real>2240</real>
 		</dict>
 		<key>D38F9CCA-E436-47F3-BC3C-FD570EC9D933</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>385</integer>
+			<real>385</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>D6043255-D8CE-4E2F-8132-A05B5D40E30B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1075</integer>
+			<real>1075</real>
 			<key>ypos</key>
-			<integer>1340</integer>
+			<real>1340</real>
 		</dict>
 		<key>D784899B-15E8-4EE0-9851-06BE6F0CE8AB</key>
 		<dict>
@@ -7244,200 +7249,189 @@ Citation Picker</string>
 			<key>note</key>
 			<string>open man page</string>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4690</integer>
+			<real>4690</real>
 		</dict>
 		<key>DC77C4D7-6154-4281-B7B5-5E14299C4D30</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>975</integer>
+			<real>975</real>
 			<key>ypos</key>
-			<integer>140</integer>
+			<real>140</real>
 		</dict>
 		<key>DD59F90F-8FD2-486D-A8A8-2FFA47DE45F6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>965</integer>
+			<real>965</real>
 			<key>ypos</key>
-			<integer>360</integer>
+			<real>360</real>
 		</dict>
 		<key>E0161BB2-AEAF-414C-BC56-8903CCC21234</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>155</integer>
+			<real>155</real>
 			<key>ypos</key>
-			<integer>1540</integer>
-		</dict>
-		<key>E07255AA-BD02-45CF-8FE3-817111A25346</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>construct mailto: with workflow and Alfred version</string>
-			<key>xpos</key>
-			<integer>610</integer>
-			<key>ypos</key>
-			<integer>4825</integer>
+			<real>1540</real>
 		</dict>
 		<key>E089F2B7-2FE8-4E77-B050-9AE8287186D8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>2745</integer>
+			<real>2745</real>
 		</dict>
 		<key>E1D3B211-1CE6-4A09-B45E-7C55A61CDC06</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1245</integer>
+			<real>1245</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>E39AFAE2-FEBE-438E-AB36-CF10EC6DBBFD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1485</integer>
+			<real>1485</real>
 			<key>ypos</key>
-			<integer>2270</integer>
+			<real>2270</real>
 		</dict>
 		<key>E5822F67-7265-45F3-BEC1-2966601D1F12</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1550</integer>
+			<real>1550</real>
 			<key>ypos</key>
-			<integer>2075</integer>
+			<real>2075</real>
 		</dict>
 		<key>E5F7248C-68EE-440F-8B5F-65C9F470F9CB</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>155</integer>
+			<real>155</real>
 			<key>ypos</key>
-			<integer>1275</integer>
+			<real>1275</real>
 		</dict>
 		<key>E621AAB9-7B81-4628-AEAF-9328BDD2A803</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3305</integer>
+			<real>3305</real>
 		</dict>
 		<key>E9994D9D-E843-4F55-A9A3-DB5CA63F33B7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4500</integer>
+			<real>4500</real>
 		</dict>
 		<key>EA5FC55D-EF41-48AB-8318-7FEBC5971355</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1075</integer>
+			<real>1075</real>
 			<key>ypos</key>
-			<integer>970</integer>
+			<real>970</real>
 		</dict>
 		<key>EB248989-2356-4C5F-9E7F-3F0DD9F2B859</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2350</integer>
+			<real>2350</real>
 		</dict>
 		<key>EC0EBA26-482F-4840-93EF-CEA0C7A0661A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>4010</integer>
+			<real>4010</real>
 		</dict>
 		<key>EEF73BE0-D215-459C-A69F-A7921ACF45F6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>785</integer>
+			<real>785</real>
 			<key>ypos</key>
-			<integer>460</integer>
+			<real>460</real>
 		</dict>
 		<key>F0B06555-1434-41AC-960C-F1CF6094C0FF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3750</integer>
+			<real>3750</real>
 		</dict>
 		<key>F2BF4F5F-7AB6-4DDB-AA0E-C3749ECF0D8B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>605</integer>
+			<real>605</real>
 			<key>ypos</key>
-			<integer>2135</integer>
+			<real>2135</real>
 		</dict>
 		<key>F4C7EC85-3826-4507-B556-C5335C17E07E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>235</integer>
+			<real>235</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>F8165297-EDCE-486C-8145-74C244AFBB14</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>995</integer>
+			<real>995</real>
 			<key>ypos</key>
-			<integer>1125</integer>
+			<real>1125</real>
 		</dict>
 		<key>FC416094-1EB1-4464-97E2-8A6E678A45AC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>2860</integer>
+			<real>2860</real>
 		</dict>
 		<key>FE122FB8-705A-4169-9391-1F91038FDFB6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1265</integer>
+			<real>1265</real>
 			<key>ypos</key>
-			<integer>255</integer>
+			<real>255</real>
 		</dict>
 		<key>FE874084-CB56-4BDF-9FF0-A3B1920C26F2</key>
 		<dict>
@@ -7446,20 +7440,22 @@ Citation Picker</string>
 			<key>note</key>
 			<string>if Zotero is not running, launch it</string>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>645</integer>
+			<real>645</real>
 		</dict>
 		<key>FFFA61F1-50F0-423F-A9DA-95C7E7D76086</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>4100</integer>
+			<real>4100</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>IconDOI</key>
