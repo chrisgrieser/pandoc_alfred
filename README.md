@@ -4,7 +4,7 @@
 
 ⚠️ Since I changed my workflow substantially, this workflow will not be actively maintained anymore. I'll be developing [the Alfred-based Citation Picker here](https://github.com/chrisgrieser/alfred-bibtex-citation-picker).
 
-The latest release still works and will most likely continue to work for the foreseeable future.
+The latest release still works and will most likely continue to work for the foreseeable future. As an easy-to-use alternative, I can recommend [DocDown](https://github.com/lowercasename/docdown).
 
 ---
 
