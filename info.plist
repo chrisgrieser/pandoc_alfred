@@ -7522,7 +7522,7 @@ Citation Picker</string>
 		<string>bibtex_library_path</string>
 	</array>
 	<key>version</key>
-	<string>5.3.5</string>
+	<string>5.3.6</string>
 	<key>webaddress</key>
 	<string>https://chris-grieser.de/pandoc_alfred</string>
 </dict>

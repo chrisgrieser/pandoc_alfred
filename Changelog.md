@@ -1,3 +1,7 @@
+- 2022-08-20	release 5.3.6
+- 2022-08-20	remove mail contact since workflow unmaintained
+- 2022-02-14	local csl folder not needed as value anymore
+- 2022-02-08	retiring anticipatory word count feature
 - 2022-01-31	release 5.3.5
 - 2022-01-31	fix bibtex title key parsing for alternative formatting (#8)
 - 2022-01-18	release 5.3.4
